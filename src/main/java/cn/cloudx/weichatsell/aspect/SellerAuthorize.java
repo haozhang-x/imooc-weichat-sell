@@ -40,7 +40,7 @@ public class SellerAuthorize {
     public void verify() {
     }
 
-    @Before("verify()")
+    /*@Before("verify()")
     public void doVerify() {
         ServletRequestAttributes requestAttributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
         HttpServletRequest request = requestAttributes.getRequest();
@@ -57,6 +57,6 @@ public class SellerAuthorize {
             log.warn("[登录校验]Redis中查不到token");
             throw new SellAuthorizeException();
         }
-    }
+    }*/
 }
 
