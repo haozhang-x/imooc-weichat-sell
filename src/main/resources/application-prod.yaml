@@ -1,0 +1,51 @@
+server:
+  port: 8099
+  servlet:
+    context-path: /sell
+spring:
+  jpa:
+    show-sql: false
+    hibernate:
+      use-new-id-generator-mappings: false
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/sell?characterEncoding=utf8&useSSL=false&useUnicode=true
+    username: sell
+    password: 'sell@123456'
+  devtools:
+    restart:
+      enabled: true
+  jackson:
+    default-property-inclusion: non_null
+  freemarker:
+    charset: utf-8
+    suffix: .ftl
+    cache: false
+  redis:
+    host: localhost
+
+
+wechat:
+  mpAppId: wx6a27fb0ea2ba7ce5
+  mpAppSecret: a93a35a57fb92d85097ba327f08ed899
+
+  openAppId: wx6ad144e54af67d87
+  openAppSecret: 91a2ff6d38a2bbccfb7e9f9079108e2e
+
+  mchId: 1483469312
+  mchKey: C5245D70627C1F8E9964D494B0735025
+  keyPath: /var/wechat-pay/h5.p12
+  notifyUrl: http://xiangjianran.fun/sell/pay/notify
+
+project-url:
+  sell: http://xiangjianran.fun/sell
+  weChatMpAuthorize: http://xiangjianran.fun/sell
+  weChatOpenAuthorize: http://xiangjianran.fun/sell
+
+
+
+#logging:
+#  pattern:
+#    console: "%d - %msg%n"
+#  path: /var/log/tomcat/
+#  file: /var/log/tomcat/sell.log
