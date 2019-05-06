@@ -106,7 +106,7 @@ public class BuyerOrderController {
      * 取消订单
      */
 
-    @GetMapping("/cancel")
+    @RequestMapping("/cancel")
     public ResultVO cancel(@RequestParam("openid") String openid, @RequestParam("orderId") String orderId) {
         if (StringUtils.isEmpty(openid)) {
             log.error("[查询订单详情] openid为空");

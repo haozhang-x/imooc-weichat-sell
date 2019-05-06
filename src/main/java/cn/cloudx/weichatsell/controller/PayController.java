@@ -40,6 +40,7 @@ public class PayController {
         if (orderDTO == null) {
             throw new SellException(ResultEnum.ORDER_NOT_EXISTS);
         }
+        orderDTO.setBuyerOpenid("oTgZpwX4spaRFEKBvZgMc1IrqUzg");
         PayResponse payResponse = payService.create(orderDTO);
         modelMap.put("payResponse", payResponse);
         modelMap.put("returnUrl", returnUrl);

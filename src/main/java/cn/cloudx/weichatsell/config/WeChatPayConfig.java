@@ -30,7 +30,7 @@ public class WeChatPayConfig {
     @Bean
     public WxPayH5Config wxPayH5Config() {
         WxPayH5Config wxPayH5Config = new WxPayH5Config();
-        wxPayH5Config.setAppId(weChatAccountConfig.getMpAppId());
+        wxPayH5Config.setAppId(weChatAccountConfig.getMpPayAppId());
         wxPayH5Config.setAppSecret(weChatAccountConfig.getMpAppSecret());
         wxPayH5Config.setMchId(weChatAccountConfig.getMchId());
         wxPayH5Config.setMchKey(weChatAccountConfig.getMchKey());

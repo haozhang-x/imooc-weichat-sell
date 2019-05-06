@@ -1,6 +1,7 @@
 package cn.cloudx.weichatsell.controller;
 
 import cn.cloudx.weichatsell.config.ProjectUrlConfig;
+import cn.cloudx.weichatsell.config.WeChatAccountConfig;
 import cn.cloudx.weichatsell.enums.ResultEnum;
 import cn.cloudx.weichatsell.exception.SellException;
 import lombok.extern.slf4j.Slf4j;
@@ -37,9 +38,13 @@ public class WeChatController {
     private ProjectUrlConfig projectUrlConfig;
 
 
+    @Autowired
+    private WeChatAccountConfig accountConfig;
+
+
     @GetMapping("/authorize")
     public String authorize(@RequestParam("returnUrl") String returnUrl) {
-        String url = projectUrlConfig.getWeChatOpenAuthorize() + "/sell/wechat/userInfo";
+        String url = projectUrlConfig.getWeChatOpenAuthorize() + "/wechat/userInfo";
         String redirectUrl = wxMpService.oauth2buildAuthorizationUrl(url,
                 WxConsts.OAuth2Scope.SNSAPI_BASE, URLEncoder.encode(returnUrl));
         log.info("[微信网页授权]获取code,result={}", redirectUrl);
