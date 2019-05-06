@@ -118,7 +118,7 @@
 <script>
     var websocket = null;
     if ('WebSocket' in window) {
-        websocket = new WebSocket('ws://localhost:8099/sell/websocket');
+        websocket = new WebSocket('ws://xiangjianran.fun:8099/sell/websocket');
     } else {
         alert('浏览器不支持websocket');
     }
