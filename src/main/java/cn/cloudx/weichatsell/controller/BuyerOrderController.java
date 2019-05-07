@@ -1,9 +1,6 @@
 package cn.cloudx.weichatsell.controller;
 
-import cn.cloudx.weichatsell.converter.OrderForm2OrderDTOConverter;
-import cn.cloudx.weichatsell.exception.SellException;
-import cn.cloudx.weichatsell.service.BuyerService;
-import cn.cloudx.weichatsell.service.OrderService;
+import cn.cloudx.weichatsell.config.WeChatAccountConfig;
 import cn.cloudx.weichatsell.converter.OrderForm2OrderDTOConverter;
 import cn.cloudx.weichatsell.dto.OrderDTO;
 import cn.cloudx.weichatsell.enums.ResultEnum;
@@ -37,6 +34,8 @@ import java.util.Map;
 public class BuyerOrderController {
     private OrderService orderService;
     private BuyerService buyerService;
+    @Autowired
+    private WeChatAccountConfig accountConfig;
 
     @Autowired
     public BuyerOrderController(OrderService orderService, BuyerService buyerService) {
@@ -77,6 +76,7 @@ public class BuyerOrderController {
     public ResultVO<List<OrderDTO>> list(@RequestParam("openid") String openid,
                                          @RequestParam(value = "page", defaultValue = "0") Integer page,
                                          @RequestParam(value = "size", defaultValue = "10") Integer size) {
+        openid = accountConfig.getPayOpenId();
         if (StringUtils.isEmpty(openid)) {
             log.error("[查询订单列表] openid为空");
             throw new SellException(ResultEnum.PARAM_ERROR);
@@ -94,6 +94,7 @@ public class BuyerOrderController {
      */
     @GetMapping("/detail")
     public ResultVO<OrderDTO> detail(@RequestParam("openid") String openid, @RequestParam("orderId") String orderId) {
+        openid = accountConfig.getPayOpenId();
         if (StringUtils.isEmpty(openid)) {
             log.error("[查询订单详情] openid为空");
             throw new SellException(ResultEnum.PARAM_ERROR);
@@ -108,6 +109,7 @@ public class BuyerOrderController {
 
     @RequestMapping("/cancel")
     public ResultVO cancel(@RequestParam("openid") String openid, @RequestParam("orderId") String orderId) {
+        openid = accountConfig.getPayOpenId();
         if (StringUtils.isEmpty(openid)) {
             log.error("[查询订单详情] openid为空");
             throw new SellException(ResultEnum.PARAM_ERROR);
