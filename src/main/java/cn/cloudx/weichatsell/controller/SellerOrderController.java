@@ -69,7 +69,6 @@ public class SellerOrderController {
         }
         modelMap.put("msg", ResultEnum.ORDER_CANCEL_SUCCESS.getMessage());
         modelMap.put("url", "/sell/seller/order/list");
-        orderService.cancel(orderDTO);
         return new ModelAndView("/common/success", modelMap);
     }
 
