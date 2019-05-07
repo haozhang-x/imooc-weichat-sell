@@ -49,7 +49,7 @@ public class WebSocket {
             try {
                 webSocket.session.getBasicRemote().sendText(message);
             } catch (IOException e) {
-                log.info("[websocket消息] 广播消息发送异常,e={}", e);
+                log.info("[websocket消息] 广播消息发送异常,e={1}", e);
             }
         }
     }
