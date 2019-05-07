@@ -43,7 +43,7 @@ public class PayController {
         orderDTO.setBuyerOpenid("oTgZpwX4spaRFEKBvZgMc1IrqUzg");
         PayResponse payResponse = payService.create(orderDTO);
         modelMap.put("payResponse", payResponse);
-        modelMap.put("returnUrl", returnUrl);
+        modelMap.put("orderId", orderId);
         return new ModelAndView("pay/create", modelMap);
     }
 
