@@ -76,7 +76,7 @@ public class WeChatController {
             throw new SellException(ResultEnum.WECHAT_MP_ERROR.getCode(), e.getError().getErrorMsg());
         }
         String openId = wxMpOAuth2AccessToken.getOpenId();
-        return "redirect:" + returnUrl + "?openid=" + accountConfig.getPayOpenId();
+        return "redirect:" + returnUrl + "?openid=" + openId;
     }
 
 
@@ -91,7 +91,7 @@ public class WeChatController {
         }
         log.info("wxMpOAuth2AccessToken={}", wxMpOAuth2AccessToken);
         String openId = wxMpOAuth2AccessToken.getOpenId();
-        return "redirect:" + returnUrl + "?openid=" + accountConfig.getPayOpenId();
+        return "redirect:" + returnUrl + "?openid=" + openId;
 
     }
 
