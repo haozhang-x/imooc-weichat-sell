@@ -154,7 +154,7 @@ public class OrderServiceImpl implements OrderService {
     public OrderDTO cancel(OrderDTO orderDTO) {
         OrderMaster orderMaster = new OrderMaster();
         //判断订单状态
-        if (!orderDTO.getOrderStatus().equals(OrderStatusEnum.NEW.getCode())) {
+        if (!orderDTO.getOrderStatusEnum().getCode().equals(OrderStatusEnum.NEW.getCode())) {
             log.error("[取消订单]订单状态不正确,orderId={},orderStatus={}", orderDTO.getOrderId(), orderDTO.getOrderStatus());
             throw new SellException(ResultEnum.ORDER_STATUS_ERROR);
         }
