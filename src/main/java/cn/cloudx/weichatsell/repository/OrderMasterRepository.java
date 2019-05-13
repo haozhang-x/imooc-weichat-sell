@@ -6,10 +6,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-/**
- * @author zhanghao
- * @date 2018/04/21
- */
+
 public interface OrderMasterRepository extends JpaRepository<OrderMaster, String> {
 
     /**

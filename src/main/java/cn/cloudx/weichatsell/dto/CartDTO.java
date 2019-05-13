@@ -2,10 +2,7 @@ package cn.cloudx.weichatsell.dto;
 
 import lombok.Data;
 
-/**
- * @author zhanghao
- * @date 2018/04/22
- */
+
 @Data
 public class CartDTO {
     /**

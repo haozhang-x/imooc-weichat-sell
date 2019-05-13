@@ -1,8 +1,6 @@
 package cn.cloudx.weichatsell.converter;
 
 import cn.cloudx.weichatsell.dataobject.OrderDetail;
-import cn.cloudx.weichatsell.exception.SellException;
-import cn.cloudx.weichatsell.dataobject.OrderDetail;
 import cn.cloudx.weichatsell.dto.OrderDTO;
 import cn.cloudx.weichatsell.enums.ResultEnum;
 import cn.cloudx.weichatsell.exception.SellException;
@@ -15,10 +13,7 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author zhanghao
- * @date 2018/04/24
- */
+
 @Slf4j
 public class OrderForm2OrderDTOConverter {
 

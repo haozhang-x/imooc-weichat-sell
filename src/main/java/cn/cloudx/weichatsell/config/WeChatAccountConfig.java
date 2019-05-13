@@ -6,10 +6,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.Map;
 
-/**
- * @author zhanghao
- * @date 2018/04/25
- */
+
 @Data
 @Component
 @ConfigurationProperties(prefix = "wechat")
@@ -47,7 +44,7 @@ public class WeChatAccountConfig {
     /**
      * 保存模板消息id
      */
-    private Map<String,String> templateMap;
+    private Map<String, String> templateMap;
 
 
 }

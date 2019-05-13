@@ -8,10 +8,7 @@ import org.springframework.data.domain.Pageable;
 
 import java.util.List;
 
-/**
- * @author zhanghao
- * @date 2018/04/20
- */
+
 public interface ProductService {
     /**
      * 查找一个

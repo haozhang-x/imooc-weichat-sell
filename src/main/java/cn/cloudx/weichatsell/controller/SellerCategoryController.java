@@ -2,9 +2,6 @@ package cn.cloudx.weichatsell.controller;
 
 import cn.cloudx.weichatsell.dataobject.ProductCategory;
 import cn.cloudx.weichatsell.exception.SellException;
-import cn.cloudx.weichatsell.service.CategoryService;
-import cn.cloudx.weichatsell.dataobject.ProductCategory;
-import cn.cloudx.weichatsell.exception.SellException;
 import cn.cloudx.weichatsell.form.CategoryForm;
 import cn.cloudx.weichatsell.service.CategoryService;
 import org.springframework.beans.BeanUtils;

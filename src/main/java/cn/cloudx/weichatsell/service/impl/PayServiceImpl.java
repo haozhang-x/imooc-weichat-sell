@@ -18,10 +18,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 
-/**
- * @author zhanghao
- * @date 2018/04/27
- */
+
 @Service
 @Slf4j
 public class PayServiceImpl implements PayService {

@@ -3,10 +3,7 @@ package cn.cloudx.weichatsell.exception;
 import cn.cloudx.weichatsell.enums.ResultEnum;
 import lombok.Getter;
 
-/**
- * @author zhanghao
- * @date 2018/04/22
- */
+
 @Getter
 public class SellException extends RuntimeException {
     private Integer code;

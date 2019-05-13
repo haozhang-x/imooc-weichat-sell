@@ -4,10 +4,7 @@ import cn.cloudx.weichatsell.dto.OrderDTO;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
-/**
- * @author zhanghao
- * @date 2018/04/22
- */
+
 public interface OrderService {
     /**
      * 创建订单

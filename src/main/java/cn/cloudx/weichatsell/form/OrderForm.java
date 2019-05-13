@@ -4,10 +4,7 @@ import lombok.Data;
 
 import javax.validation.constraints.NotEmpty;
 
-/**
- * @author zhanghao
- * @date 2018/04/24
- */
+
 @Data
 public class OrderForm {
     /**

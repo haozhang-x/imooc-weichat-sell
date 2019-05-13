@@ -1,27 +1,13 @@
 package cn.cloudx.weichatsell.aspect;
 
-import cn.cloudx.weichatsell.constant.CookieConstant;
-import cn.cloudx.weichatsell.constant.RedisConstant;
-import cn.cloudx.weichatsell.exception.SellAuthorizeException;
-import cn.cloudx.weichatsell.utils.CookieUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Component;
-import org.springframework.util.StringUtils;
-import org.springframework.web.context.request.RequestContextHolder;
-import org.springframework.web.context.request.ServletRequestAttributes;
 
-import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServletRequest;
 
-/**
- * @author zhanghao
- * @date 2018/05/06
- */
 @Aspect
 @Component
 @Slf4j

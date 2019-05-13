@@ -7,10 +7,7 @@ import cn.cloudx.weichatsell.service.SellerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-/**
- * @author zhanghao
- * @date 2018/05/06
- */
+
 @Service
 public class SellerServiceImpl implements SellerService {
 

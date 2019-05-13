@@ -4,10 +4,7 @@ import lombok.Data;
 
 import java.math.BigDecimal;
 
-/**
- * @author zhanghao
- * @date 2018/05/05
- */
+
 @Data
 public class ProductForm {
     private String productId;

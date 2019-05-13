@@ -6,10 +6,7 @@ import lombok.Data;
 import java.io.Serializable;
 import java.math.BigDecimal;
 
-/**
- * @author zhanghao
- * @date 2018/04/20
- */
+
 @Data
 public class ProductInfoVO implements Serializable {
 

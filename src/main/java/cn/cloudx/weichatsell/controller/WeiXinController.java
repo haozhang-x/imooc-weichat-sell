@@ -7,10 +7,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
-/**
- * @author zhanghao
- * @date 2018/04/25
- */
+
 @RestController
 @RequestMapping("/weixin")
 @Slf4j

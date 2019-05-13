@@ -7,10 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
-/**
- * @author zhanghao
- * @date 2018/04/27
- */
+
 @Component
 public class WeChatPayConfig {
     private WeChatAccountConfig weChatAccountConfig;

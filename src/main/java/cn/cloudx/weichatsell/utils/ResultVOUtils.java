@@ -2,10 +2,7 @@ package cn.cloudx.weichatsell.utils;
 
 import cn.cloudx.weichatsell.vo.ResultVO;
 
-/**
- * @author zhanghao
- * @date 2018/04/21
- */
+
 public class ResultVOUtils {
     public static ResultVO success(Object object) {
         ResultVO resultVO = new ResultVO();

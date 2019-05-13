@@ -8,10 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
-/**
- * @author zhanghao
- * @date 2018/04/25
- */
+
 @Component
 public class WeChatMpConfig {
     private WeChatAccountConfig config;

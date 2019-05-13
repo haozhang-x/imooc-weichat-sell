@@ -8,10 +8,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-/**
- * @author zhanghao
- * @date 2018/04/19
- */
+
 @Service
 public class CategoryServiceImpl implements CategoryService {
     private ProductCategoryRepository repository;

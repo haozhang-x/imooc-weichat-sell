@@ -1,9 +1,6 @@
 package cn.cloudx.weichatsell.utils;
 
-/**
- * @author zhanghao
- * @date 2018/04/28
- */
+
 public class MathUtil {
 
 

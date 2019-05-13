@@ -1,9 +1,5 @@
 package cn.cloudx.weichatsell.controller;
 
-import cn.cloudx.weichatsell.constant.CookieConstant;
-import cn.cloudx.weichatsell.constant.RedisConstant;
-import cn.cloudx.weichatsell.dataobject.SellerInfo;
-import cn.cloudx.weichatsell.service.SellerService;
 import cn.cloudx.weichatsell.config.ProjectUrlConfig;
 import cn.cloudx.weichatsell.constant.CookieConstant;
 import cn.cloudx.weichatsell.constant.RedisConstant;
@@ -26,10 +22,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
-/**
- * @author zhanghao
- * @date 2018/05/06
- */
+
 @Controller
 @RequestMapping("/seller")
 public class SellerUserController {

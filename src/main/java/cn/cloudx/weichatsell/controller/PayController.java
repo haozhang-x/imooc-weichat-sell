@@ -13,10 +13,7 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
-/**
- * @author zhanghao
- * @date 2018/04/27
- */
+
 @Controller
 @Slf4j
 @RequestMapping("/pay")

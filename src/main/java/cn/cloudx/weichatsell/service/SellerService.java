@@ -3,10 +3,7 @@ package cn.cloudx.weichatsell.service;
 
 import cn.cloudx.weichatsell.dataobject.SellerInfo;
 
-/**
- * @author zhanghao
- * @date 2018/05/06
- */
+
 public interface SellerService {
 
     /**

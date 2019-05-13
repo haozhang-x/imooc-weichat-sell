@@ -1,15 +1,11 @@
 package cn.cloudx.weichatsell.dataobject.mapper;
 
 import cn.cloudx.weichatsell.dataobject.ProductCategory;
-import cn.cloudx.weichatsell.dataobject.ProductCategory;
 import org.apache.ibatis.annotations.*;
 
 import java.util.Map;
 
-/**
- * @author zhanghao
- * @date 2018/05/09
- */
+
 @Mapper
 public interface ProductCategoryMapper {
     @Insert("insert into product_category(category_name,category_type) values(#{category_name},#{category_type})")

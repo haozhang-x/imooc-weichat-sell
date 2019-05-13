@@ -7,10 +7,7 @@ import com.fasterxml.jackson.databind.SerializerProvider;
 import java.io.IOException;
 import java.util.Date;
 
-/**
- * @author zhanghao
- * @date 2018/04/24
- */
+
 public class Date2LongSerializer extends JsonSerializer<Date> {
 
     @Override

@@ -2,10 +2,7 @@ package cn.cloudx.weichatsell.enums;
 
 import lombok.Getter;
 
-/**
- * @author zhanghao
- * @date 2018/04/22
- */
+
 @Getter
 public enum ResultEnum {
 

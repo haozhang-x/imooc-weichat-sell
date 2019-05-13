@@ -3,10 +3,7 @@ package cn.cloudx.weichatsell.service;
 
 import cn.cloudx.weichatsell.dto.OrderDTO;
 
-/**
- * @author zhanghao
- * @date 2018/04/24
- */
+
 public interface BuyerService {
     /**
      * 查询一个订单

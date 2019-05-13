@@ -18,10 +18,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.net.URLEncoder;
 
-/**
- * @author zhanghao
- * @date 2018/04/25
- */
+
 @RequestMapping("/wechat")
 @Controller
 @Slf4j
@@ -58,7 +55,7 @@ public class WeChatController {
 
         String openId = "oTgZpwX4spaRFEKBvZgMc1IrqUzg";
 
-        String url = "http://sell.springboot.cn/sell/qr/"+openId;
+        String url = "http://sell.springboot.cn/sell/qr/" + openId;
 
         String redirectUrl = wxOpenService.buildQrConnectUrl(url,
                 WxConsts.QrConnectScope.SNSAPI_LOGIN, URLEncoder.encode(returnUrl));

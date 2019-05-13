@@ -11,10 +11,7 @@ import javax.websocket.server.ServerEndpoint;
 import java.io.IOException;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-/**
- * @author zhanghao
- * @date 2018/05/07
- */
+
 @ServerEndpoint("/websocket")
 @Slf4j
 @Component

@@ -23,7 +23,7 @@ public class ProductVO implements Serializable {
     private String categoryName;
     /**
      *
-     * */
+     */
     @JsonProperty("type")
     private Integer categoryType;
 

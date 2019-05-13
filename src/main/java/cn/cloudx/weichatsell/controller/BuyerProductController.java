@@ -19,10 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * @author zhanghao
- * @date 2018/04/20
- */
+
 @RestController
 @RequestMapping("/buyer/product")
 public class BuyerProductController {

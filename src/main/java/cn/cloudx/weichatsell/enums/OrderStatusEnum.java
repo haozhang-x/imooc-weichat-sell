@@ -2,10 +2,7 @@ package cn.cloudx.weichatsell.enums;
 
 import lombok.Getter;
 
-/**
- * @author zhanghao
- * @date 2018/04/21
- */
+
 @Getter
 public enum OrderStatusEnum implements CodeEnum {
 

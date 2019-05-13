@@ -12,10 +12,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * @author zhanghao
- * @date 2018/05/09
- */
+
 @SpringBootTest
 @RunWith(SpringRunner.class)
 @Slf4j

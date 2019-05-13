@@ -14,10 +14,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.servlet.ModelAndView;
 
-/**
- * @author zhanghao
- * @date 2018/05/06
- */
+
 @ControllerAdvice
 public class SellExceptionHandler {
 

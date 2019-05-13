@@ -2,10 +2,7 @@ package cn.cloudx.weichatsell.form;
 
 import lombok.Data;
 
-/**
- * @author zhanghao
- * @date 2018/05/05
- */
+
 @Data
 public class CategoryForm {
     private Integer categoryId;

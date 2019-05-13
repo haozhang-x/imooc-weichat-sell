@@ -1,7 +1,6 @@
 package cn.cloudx.weichatsell.service.impl;
 
 import cn.cloudx.weichatsell.dataobject.ProductInfo;
-import cn.cloudx.weichatsell.dataobject.ProductInfo;
 import cn.cloudx.weichatsell.enums.ProductStatusEnum;
 import org.junit.Assert;
 import org.junit.Test;
@@ -15,10 +14,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import java.math.BigDecimal;
 import java.util.List;
 
-/**
- * @author zhanghao
- * @date 2018/04/20
- */
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class ProductServiceImplTest {

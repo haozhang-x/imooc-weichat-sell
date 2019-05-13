@@ -2,10 +2,7 @@ package cn.cloudx.weichatsell.utils;
 
 import java.util.Random;
 
-/**
- * @author zhanghao
- * @date 2018/04/22
- */
+
 public class KeyUtil {
     /**
      * 生成唯一的主键

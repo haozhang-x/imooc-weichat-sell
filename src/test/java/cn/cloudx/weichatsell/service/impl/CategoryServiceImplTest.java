@@ -1,7 +1,6 @@
 package cn.cloudx.weichatsell.service.impl;
 
 import cn.cloudx.weichatsell.dataobject.ProductCategory;
-import cn.cloudx.weichatsell.dataobject.ProductCategory;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -12,10 +11,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * @author zhanghao
- * @date 2018/04/19
- */
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class CategoryServiceImplTest {

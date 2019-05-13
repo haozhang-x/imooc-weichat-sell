@@ -33,10 +33,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-/**
- * @author zhanghao
- * @date 2018/04/22
- */
+
 @Service
 @Slf4j
 public class OrderServiceImpl implements OrderService {
@@ -102,7 +99,6 @@ public class OrderServiceImpl implements OrderService {
                 new CartDTO(e.getProductId(), e.getProductQuantity())
         ).collect(Collectors.toList());
         productService.decreaseStock(cartDTOList);
-
 
 
         return orderDTO;

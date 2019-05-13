@@ -27,14 +27,14 @@ spring:
 
 wechat:
 
-#  微信公众平台测试号
+  #  微信公众平台测试号
   mpAppId: wx6a27fb0ea2ba7ce5
   mpAppSecret: a93a35a57fb92d85097ba327f08ed899
 
   openAppId: wx6ad144e54af67d87
   openAppSecret: 91a2ff6d38a2bbccfb7e9f9079108e2e
 
-#支付时用到的公众平台AppId
+  #支付时用到的公众平台AppId
   mpPayAppId: wxd898fcb01713c658
   mchId: 1483469312
   mchKey: C5245D70627C1F8E9964D494B0735025

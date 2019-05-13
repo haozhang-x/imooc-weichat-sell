@@ -1,8 +1,6 @@
 package cn.cloudx.weichatsell.service.impl;
 
 import cn.cloudx.weichatsell.dataobject.OrderDetail;
-import cn.cloudx.weichatsell.utils.JsonUtil;
-import cn.cloudx.weichatsell.dataobject.OrderDetail;
 import cn.cloudx.weichatsell.dto.OrderDTO;
 import cn.cloudx.weichatsell.enums.OrderStatusEnum;
 import cn.cloudx.weichatsell.enums.PayStatusEnum;
@@ -20,10 +18,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author zhanghao
- * @date 2018/04/22
- */
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @Slf4j

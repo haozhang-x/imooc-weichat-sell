@@ -24,10 +24,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * @author zhanghao
- * @date 2018/04/24
- */
+
 @RestController
 @RequestMapping("/buyer/order")
 @Slf4j

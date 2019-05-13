@@ -17,10 +17,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 import java.util.Optional;
 
-/**
- * @author zhanghao
- * @date 2018/04/20
- */
+
 @Service
 public class ProductServiceImpl implements ProductService {
 
